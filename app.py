@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jul  1 17:43:46 2022
-@description: Serving machine learning model with flask web service
+@description: Serving machine learning model with flask to azure web app
 - following Alexey ch5 deployment chapter
 @author: Aboud
 """
@@ -49,6 +49,5 @@ def predict():
 
 
 if __name__ == '__main__':
-    port = os.environ.get("PORT", 9696)
-    app.run(debug = False, host='0.0.0.0', port = port)
+    app.run(debug = True)
     
